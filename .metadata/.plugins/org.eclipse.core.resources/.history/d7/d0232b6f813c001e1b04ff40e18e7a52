@@ -1,0 +1,16 @@
+package com.educandoweb.course.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.educandoweb.course.entities.User;
+
+public class UserServices {
+	@Autowired 
+	private UserServices repository;
+	
+	public List<User> findAll(){
+		return repository.findAll();
+	}
+}
